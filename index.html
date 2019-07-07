@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Code Like a Girl</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   <!-- this outer class will hold the dspaly: grid and startup  -->
+  <div class="container">
+  
+  <!-- this will hold the logo and nav and will be flex -->
+    <nav>
+      <a href="#purchase">The Book</a>
+      <a href="#help">Help</a>
+      <a href="#kit">Kit</a>
+      <a href="press">Press</a>
+      <!-- add this in, decide where it will live and what it is for  -->
+      <a href="#about-Miriam">About Miriam </a>
+    </nav>
+    <!-- this will hold the book cover and the text, next to it in desktop, beneath it in mobile -->
+    <section class="book-and-text">
+      <div class="book"> 
+        <a href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank"><img src="https://res.cloudinary.com/tech-stories/image/upload/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png" alt="cover of Code Like a Girl book" height="392px"></a>
+      </div>
+      <div class="description">
+        <h2>Code Like a Girl<h2><p>Pre-order now. The official release date is August 13, 2019.</p>
+      </div>
+
+    </section>
+
+    <!-- this section will hold it's own grid, of 3 or more boxes with info that can be clicked -->
+    <section class="boxes">
+      <div class="box" id="purchase">
+        <h3>Get the Book</h3>
+        <p> Available at indie bookstores in your area, and online at <a href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Amazon</a> and <a href="https://www.target.com/p/code-like-a-girl-rad-tech-projects-and-practical-tips-by-miriam-peskowitz-hardcover/-/A-77096390" target="blank">Target</a>
+      </div>
+      <div class="box" id="help"> 
+        <h3>Reading the book and need help?</h3>
+        <p> I've got your back. Coding gets complicated. I'll keep track of any issues that come up here,  <a href="https://github.com/CodeLikeAGirlBook/Issues" target="_blank">on Code Like a Girl's Github page</a>, so head on over.
+        </p>
+      </div>
+      <div class="box" id="kit">
+        <h3>Get the Kit</h3>
+        <p> Here's how to get a Raspberry Pi + a breadboard + sensors and LEDs and everything you'll need (LINK COMING SOON ♥). 
+        </p>
+      </div>
+      <div class="box" id="about-Miriam"><h3>About Miriam </h3>
+        <p> Coming soon: more about Miriam and why she wrote the book and what she learned. 
+        </p></div>
+      <div class="box" id="footer">
+        <p>Site made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a>
+        </p>
+      </div>
+    </section>
+    <!-- this div ends container -->
+  </div>
+</body>
+
+<!-- the footer will be flex, like the header  -->
+<!-- <footer>
+  <p class="footer-text">
+      Made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a>
+  </p>
+</footer> -->
+</html>

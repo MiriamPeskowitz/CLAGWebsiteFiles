@@ -1,0 +1,117 @@
+body {
+  /*background-color: purple;*/
+}
+
+.container {
+  background-color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows: 40px 400px auto 40px;
+  grid-gap: 20px;
+  grid-template-areas:
+  "n n n n n n"
+  "b b b b b b"
+  "x x x x x x"
+  "x x x x x x"
+  "f f f f f f"
+  ;
+}
+
+nav {
+  grid-area: n;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*align-content: flex-start;*/
+
+}
+
+ nav > a {
+  text-decoration: none;
+  color: gray;
+ }
+
+.book-and-text {
+  grid-area: b;
+  display: flex;
+  margin-left: 20px;
+}
+
+.book {
+  background-color: lightpink;
+  border: 4px solid black;
+  border-radius: 10px;
+  /*grid-area: b;*/
+  /*
+ grid-column: 3 / 6;
+ grid-row: 2 / 3;*/
+
+}
+
+.description {
+  margin-left: 20px;
+}
+
+/*next section of boxes */
+.boxes {
+ /* background-color: #D8CEF6;*/
+  grid-area: x;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+
+}
+
+.box {
+/*  border: 1px solid black;*/
+  margin:  20px 20px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border-radius: 10px;
+ /* border: 4px solid yellow;*/
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+ }
+
+ a: visited {
+  color: black;
+ }
+
+#purchase {
+  background-color: #9CCC65;
+  margin-top: 20px;
+  
+}
+
+#help {
+  background-color: #039BE5;
+}
+
+#kit {
+  background-color: #F06292;
+}
+
+#about-Miriam {
+  background-color: #CFD8DC;
+  border: 4px solid yellow;
+ 
+}
+
+#footer {
+  grid-area: f;
+  border: none;
+}
+
+/*then add @media screen (max-width: 500) line everything up one atop the other */
+@ media all and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
