@@ -14,6 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
+article > p {
+  color: black;
+}
+
 a {
   background-color: goldenrod;
   text-decoration: none;
@@ -27,7 +31,11 @@ a {
 a:hover {
   opacity: .6;
 }
-
+/*not working, figure out why*/
+.title-bold {
+  font-weight: 900;
+  font-color: pink;
+}
 /* Styles for the hero image */
 .hero {
   /* Photo by  */
@@ -89,7 +97,7 @@ a:hover {
 .cards > ul > li > figure > figcaption {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.2);
   width: 100%;
 }
 
@@ -118,4 +126,8 @@ footer {
   color: white;
   text-align: center;
   font-size: .75rem;
+}
+
+footer > a {
+  background-color: none;
 }
