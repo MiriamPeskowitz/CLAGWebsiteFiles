@@ -121,6 +121,7 @@ a:hover {
   color: white;
   padding: .75rem;
   font-size: 1.25rem;
+/*change: take away space on bototm, so it sits slightly lower */
 }
 
 .cards > ul > li > p {
