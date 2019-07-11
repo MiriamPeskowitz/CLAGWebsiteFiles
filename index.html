@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,63 +7,89 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-   <!-- this outer class will hold the dspaly: grid and startup  -->
-  <div class="container">
-  
-  <!-- this will hold the logo and nav and will be flex -->
-    <nav>
-      <a href="#purchase">The Book</a>
-      <a href="#help">Help</a>
-      <a href="#kit">Kit</a>
-      <a href="press">Press</a>
-      <!-- add this in, decide where it will live and what it is for  -->
-      <a href="#about-Miriam">About Miriam </a>
-    </nav>
-    <!-- this will hold the book cover and the text, next to it in desktop, beneath it in mobile -->
-    <section class="book-and-text">
-      <div class="book"> 
-        <a href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank"><img src="https://res.cloudinary.com/tech-stories/image/upload/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png" alt="cover of Code Like a Girl book" height="392px"></a>
-      </div>
-      <div class="description">
-        <h2>Code Like a Girl<h2><p><a href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Pre-order now.</a> The official release date is August 13, 2019.</p>
-      </div>
-
-    </section>
-
-    <!-- this section will hold it's own grid, of 3 or more boxes with info that can be clicked -->
-    <section class="boxes">
-      <div class="box" id="purchase">
-        <h3>Get the Book</h3>
-        <p> Available at indie bookstores in your area, and online at <a href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Amazon</a> and <a href="https://www.target.com/p/code-like-a-girl-rad-tech-projects-and-practical-tips-by-miriam-peskowitz-hardcover/-/A-77096390" target="blank">Target</a>.
-      </div>
-      <div class="box" id="help"> 
-        <h3>Reading the book and need help?</h3>
-        <p> I've got your back. Coding gets complicated. I'll keep track of any issues that come up here,  <a href="https://github.com/CodeLikeAGirlBook/Issues" target="_blank">on Code Like a Girl's Github page</a>, so head on over.
+<main class="wrapper">
+  <section class="hero">
+    <h1>Ready to code? </h1>
+    <img src="https://res.cloudinary.com/tech-stories/image/upload/c_thumb,w_200,g_face/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png">
+    
+    <article>
+      <p>Code Like a Girl, pubs August 13. Get ready. And by coding like a girl, I'm not just talking typing while wearing nail polish. </p>
+      <a href="#breweries">Buy Code Like a Girl</a>
+    </article>
+  </section>
+  <section class="cards" id="cards">
+    <ul>
+      <li>
+        <figure>
+          <!-- Photo by  -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562808373/Screen_Shot_2019-07-10_at_9.25.52_PM_lde9fj.png" alt="Code Like a Girl">
+          <figcaption><h3>Grab this book now!</h3></figcaption>
+        </figure>
+        <p>
+          Code like a Girl is unlike any other book out there. It's a brand new way into learning, specially written for everyone who has ever thought you have to first be a math genius before writing a single line of code. Nah. Code is all about story and language.Pick up a copy at your local indie book store, or Amazon or Target. 
         </p>
-      </div>
-      <div class="box" id="kit">
-        <h3>Find the Electronics</h3>
-        <p> Chapter 2 puts together a computer from a Raspberry Pi and chapter 5, creating code that makes sensors work and LEDs light up. You can just read along, but  <a href="https://github.com/CodeLikeAGirlBook/Electronics-Kit">click here for ideas on how to find these parts</a>. 
+        <a href="#">Buy the book</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Drew Farwell on Unsplash -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807342/Screen_Shot_2019-07-10_at_9.08.40_PM_e3rjif.png" alt="Tinkering">
+          <figcaption><h3>Supplies</h3></figcaption>
+        </figure>
+        <p>
+          All those things, the Raspberry Pi, the LEDs, the jumper wires? I know I can just read along, but tell me where I can get these. 
         </p>
-      </div>
-      <div class="box" id="about-Miriam"><h3>Why did Miriam write this book?</h3>
-        <p> I didn't start off as a coder, only as someone who was fascinated by code -- and angry that the tech industry has become so male-dominated. That's why I decided to immerse in learning to code, and explain it to everyone else.  
-        </p></div>
-      <!-- <div class="box" id="footer">
-        <p>Site made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a>
+        <a href="https://github.com/CodeLikeAGirlBook/Electronics-Kit">Supplies</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Rawpixel on Unsplash -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562806918/Screen_Shot_2019-07-10_at_7.37.01_PM_abknfk.png" alt="Debugging">
+          <figcaption><h3>Uh-oh</h3></figcaption>
+        </figure>
+        <p>
+          Coding is both easier and harder than its reputation has it. You're reading the book and coding, and you've run into a problem. Got your back. Click here for some extra help, or at least, to see if anyone else has had your problem. Or tweet @MiriamPeskowitz. 
         </p>
-      </div> -->
-    </section>
-    <!-- this div ends container -->
- 
-
-
-<!-- the footer will be flex, like the header  -->
-    <footer>
-      <p class="footer-text">
-          Made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a>
-      </p>
-    </footer>
-  </div>
+        <a href="https://github.com/CodeLikeAGirlBook/Issues" target="_blank">Help</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Drew Farwell on Unsplash -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562807641/miriam_avatar_qj1eje.jpg" alt="Miriam Peskowitz">
+          <figcaption><h3>About the author, Miriam Peskowitz</h3></figcaption>
+        </figure>
+        <p>
+          Miriam's last book was the New York Times and internationally bestselling Daring Book for Girls. ...  
+        </p>
+        <a href="#">More about Miriam</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Drew Farwell on Unsplash -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807659/Screen_Shot_2019-07-10_at_9.13.34_PM_m7gn4k.png" alt="many girls and boys">
+          <figcaption><h3>Supporters</h3></figcaption>
+        </figure>
+        <p>
+          No one codes alone. Here I'm going to add people and companies who want to support the movement for equality in coding and tech, and for everyone's chance to build awesome things with code.  
+        </p>
+        <a href="#">Supporters</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Drew Farwell on Unsplash -->
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562808655/Screen_Shot_2019-07-10_at_9.30.32_PM_hea14q.png" alt="Several friends doing a toast">
+          <figcaption><h3>Teachers & Parents</h3></figcaption>
+        </figure>
+        <p>
+          Code Like a Girl aims to help teachers and parents learn the basics of coding, so they can support kids' learning. It's everything YOU always wanted to know about how to answer the kids' questions about code--and your own. 
+        </p>
+        <a href="#">Supplies</a>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2019. Made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a></p>
+</footer>
 </body>
 </html>
