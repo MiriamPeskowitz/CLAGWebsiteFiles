@@ -52,7 +52,7 @@ a:hover {
 
 /*move .hero > img {} here for the size */
 .hero > #bookcover {
-  height: 150%;
+  height: 120%;
 }
 
 .hero > h1 {
