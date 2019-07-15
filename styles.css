@@ -168,7 +168,7 @@ footer > p > a {
 
 /*MEDIA QUERIES */
 /* newer formatting: width <= 910px*/
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 960px) {
   .hero {
     grid-template-columns: 1;
   /*  grid-template-rows: auto;*/
@@ -181,8 +181,8 @@ footer > p > a {
     height: 88%;
   }  
 }
-
-@media screen and (max-width: 810px) {
+/*fix something up here with the way that the two hero boxes grid together */
+@media screen and (max-width: 840px) {
   .hero {
     display: block;
     /*background-color: skyblue;*/
