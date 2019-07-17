@@ -27,7 +27,10 @@ a:hover {
   opacity: .6;
 }
 /*not working, figure out why*/
-
+/*.wrapper {
+  display: grid;
+  grid-template-rows: 2fr auto;
+}*/
 /* Styles for the hero image */
 .hero {
   background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
@@ -40,7 +43,7 @@ a:hover {
   /* grid styles */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*align-items: center;*/
+  align-items: center;
 }
 
 .hero .item {
@@ -151,7 +154,7 @@ a:hover {
 .cards > ul > li > p {
   font-size: 1rem;
   line-height: 1.5;
-  padding: 1rem .75rem;
+  padding: 1rem 2rem;
   color: #666666;
 }
 
@@ -165,9 +168,8 @@ a:hover {
   background-color: white;
 }
 
-/* footer */
+/* FOOTER */
 footer {
-  /*background-color: #333;*/
   background-color: #5DBCD2;
   color:  black;
   padding: .75rem;
@@ -213,10 +215,15 @@ footer > p > a {
 }
 
 @media screen and (max-width: 545px) {
- /* .hero > #bookcover {
-      height: 50%;
-    }
-*/     /* https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
+  
+  .item {
+    text-align: center;
+   } 
+  .hero > #bookcover {
+    
+  }
+
+     /* https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
   
   /*.hero {
     margin-right: 1px;
@@ -228,10 +235,11 @@ footer > p > a {
     margin: none;
     border: 1px solid gray;
   }
-  .hero > picture {
+  .hero > #bookcover {
   /*    height: 20%;*/
-      text-align: center;
+      align-items: center;
       margin-bottom: .5rem;
+
   }
   .hero > article > a {
     padding: 1rem;
