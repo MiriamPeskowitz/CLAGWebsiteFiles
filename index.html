@@ -12,9 +12,11 @@
   <main class="wrapper">
     <!-- add nav bar here ul/li with grid -->
     <section class="hero"> 
-      <div class="item">
-        <img id="bookcover" src="https://res.cloudinary.com/tech-stories/image/upload/bo_3px_solid_rgb:6d6767,c_scale,h_387,r_5/a_340/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png" alt="Code Like a Girl bookcover. Gray background with blue and rainbow swirly print" >
-      </div>  
+      <picture class="item">
+        <source media="(min-width: 545px)" srcset="https://res.cloudinary.com/tech-stories/image/upload/bo_3px_solid_rgb:6d6767,c_scale,h_387,r_5/a_340/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png">
+        <source media="(max-width: 544px)" srcset=" https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png">
+        <img id="bookcover" src="https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_262/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png" alt="Code Like a Girl bookcover. Gray background with blue and rainbow swirly print" >
+      </picture>  
       <article class="item" id="description">
         <!-- <h1>Ever Wondered How Coding Gets Done? </h1> -->
         

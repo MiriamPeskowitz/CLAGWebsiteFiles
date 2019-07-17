@@ -13,7 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 a {
   background-color: goldenrod;
   text-decoration: none;
@@ -31,10 +30,12 @@ a:hover {
 
 /* Styles for the hero image */
 .hero {
-/*  background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;*/
+  background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
   /*background-size: cover;*/
+   /*background-color: skyblue;*/
   padding: 4rem 2rem;
-  border: 1px solid gray;
+  border: 2px solid gray;
+  border-radius: .45rem;
   margin: 2rem;
   /* grid styles */
   display: grid;
@@ -85,7 +86,8 @@ a:hover {
 
 .hero > article > h2 > span {
   /*font-weight: 700;*/
-  font-style: italic;
+  font-style: bolder;
+  color: red;
 }
 /*
 .hero > #description > p {
@@ -180,55 +182,68 @@ footer > p > a {
 
 /*MEDIA QUERIES */
 /* newer formatting: width <= 910px*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 970px) {
   .hero {
     grid-template-columns: 100%;
     grid-template-rows: 400px auto;
+    align-items: center;
     /*grid-gap: 1rem;*/
   /*  background: none;*/
     /*background-color: skyblue;*/
-    border: 4px solid gray;
+    /*border: 4px solid gray;*/
   }
+  /*.hero > .items {
+    width: 100%;
+    margin: 0;
+  }*/
   /*.hero > #bookcover {
     height: 88%;
+    margin: 20px;
   } */ 
 }
 /*fix something up here with the way that the two hero boxes grid together */
 @media screen and (max-width: 840px) {
-  .hero {
-    display: block;
-    /*background-color: skyblue;*/
-
-  }
-  /*.hero > #bookcover {
+ 
+/*https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
+/*  
+  .hero > #bookcover {
     height: 55%;
     margin-bottom: 10%;
-    /*align-content: center;*/
-  } */
+  }*/
 }
 
 @media screen and (max-width: 545px) {
  /* .hero > #bookcover {
       height: 50%;
-  }
-  .hero {
+    }
+*/     /* https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
+  
+  /*.hero {
     margin-right: 1px;
-  }
-*/}
+  }*/
+}
 
 @media screen and (max-width: 415px) {
   .hero {
     margin: none;
-    border: none;
+    border: 1px solid gray;
   }
-  .hero > #bookcover {
-      height: 38%;
+  .hero > picture {
+  /*    height: 20%;*/
+      text-align: center;
+      margin-bottom: .5rem;
   }
   .hero > article > a {
     padding: 1rem;
     margin-top: .75rem;
     margin-left: .25rem;
     font-size: 1.5rem;
+  }
 }
+
+@media screen and (max-width: 380px) {
+  /*.hero > img > #bookcover {
+    height: 20%;
+  }*/
 }
 /*for mobile, make the overlay to each card smaller, and maybe make the text color darker */
