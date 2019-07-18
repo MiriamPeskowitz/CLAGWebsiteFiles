@@ -26,14 +26,9 @@ a {
 a:hover {
   opacity: .6;
 }
-/*not working, figure out why*/
-/*.wrapper {
-  display: grid;
-  grid-template-rows: 2fr auto;
-}*/
-/* Styles for the hero image */
+
 .hero {
-  background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
+  background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') 
   /*background-size: cover;*/
    /*background-color: skyblue;*/
   padding: 4rem 2rem;
@@ -43,43 +38,23 @@ a:hover {
   /* grid styles */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   align-items: center;
-}
-
-.hero .item {
-  width: 100%;
 }
 
 .hero > * {
   color: black;
 }
 
-/*move .hero > img {} here for the size */
-/*.hero > #bookcover {
-  height: 100%;
-}*/
-/*
+picture > .item{
+  padding-left: 40px;
+}
+
 .hero > p{
   font-size: 36px;
   padding-bottom: 1rem;
   font-weight: bold;
-}*/
-/*
-.hero > h1 {
-  font-weight: bolder;
-  font-size: 36px;
-}*/
-/*.hero > article {
- margin-left: 3rem;
-}*/
-
-/*.hero > article > p {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-left: 20px;
 }
-*/
 
 .hero p {
   padding-left: 20px;
@@ -88,19 +63,13 @@ a:hover {
 }
 
 .hero > article > h2 > span {
-  /*font-weight: 700;*/
-  font-style: bolder;
-  color: red;
+  font-weight: 900;
 }
-/*
-.hero > #description > p {
-  font-weight: 700;
-  padding-left: 1em;
-}*/
+
 .hero > article > a {
   padding: 1rem;
   margin-top: .75rem;
-  /*margin-left: 7rem;*/
+  margin-left: 7rem;
   font-size: 1.5rem;
 }
 .uppercase {
@@ -174,7 +143,7 @@ footer {
   color:  black;
   padding: .75rem;
   text-align: center;
-  font-size: .75rem;
+  font-size: 1rem;
 }
 
 footer > p > a {
@@ -184,7 +153,7 @@ footer > p > a {
 
 /*MEDIA QUERIES */
 /* newer formatting: width <= 910px*/
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1030px) {
   .hero {
     grid-template-columns: 100%;
     grid-template-rows: 400px auto;
@@ -207,21 +176,23 @@ footer > p > a {
 @media screen and (max-width: 840px) {
  
 /*https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
-/*  
+  /*
   .hero > #bookcover {
-    height: 55%;
+    height: 20%;
     margin-bottom: 10%;
   }*/
+
 }
+
 
 @media screen and (max-width: 545px) {
   
   .item {
     text-align: center;
    } 
-  .hero > #bookcover {
+  /*.hero > #bookcover {
     
-  }
+  }*/
 
      /* https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:514b4b,c_scale,h_105/v1563147963/Screen_Shot_2019-07-14_at_7.45.38_PM_nabsrk.png*/
   
