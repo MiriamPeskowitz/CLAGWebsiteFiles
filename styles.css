@@ -49,11 +49,13 @@ a:hover {
 }
 
 #cover-image {
-  padding: 0 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
 }
 
 #description  {
   padding: 2rem;
+  font-size: 1.4rem;
 }
 
 .hero > article > p {
@@ -139,7 +141,7 @@ a:hover {
 
 /*/change font size */
 .cards > ul > li > p {
-  /*font-size: 1.5rem;*/
+  font-size: 1.5rem;
   line-height: 1.5;
   padding: 1rem 2rem;
   color: #666666;
@@ -168,23 +170,29 @@ footer {
   border: 2px solid gray;
   border-radius: .45rem;
   margin: 1rem;
+  /*#grid*/
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
 }
 
 
 footer > p {
- /* font-size: 1.5rem;*/
+  font-size: 1.5rem;
 }
-footer > p > a {
+
+footer > section > p > a {
   color: black;
   /*background-color: #5DBCD2;*/
   background-color: transparent;
   font-family: 'Playfair Display', serif;
 }
 
-footer > p > a:hover {
-  font-weight: bold;
+footer > section > p > a:hover {
+  font-weight: bolder;
 }
-
 
 /*MEDIA QUERIES */
 @media screen and (max-width: 830px) {
