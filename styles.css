@@ -139,7 +139,7 @@ a:hover {
 
 /*/change font size */
 .cards > ul > li > p {
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
   line-height: 1.5;
   padding: 1rem 2rem;
   color: #666666;
@@ -273,10 +273,10 @@ footer > p > a:hover {
   }
   ul {
     padding: 1rem 0;
-  }
+  
   align-items: center;
   justify-items: center;
-
+}
  /* .hero > #bookcover > img{
     margin-left: 10%;
     height: 30%;
