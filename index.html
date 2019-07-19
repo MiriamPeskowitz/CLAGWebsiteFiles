@@ -1,115 +1,127 @@
 <!-- Website for code like a girl book. Created by @miriampeskowitz -->
-<!-- Needs: routing for supplies and help-- anything else mentioned in the book?  -->
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Code Like a Girl</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+<!-- Needs: routing for supplies and help.  anything else mentioned in the book?  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Code Like a Girl</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
 
-<body>
-  <main class="wrapper">
-    <!-- add nav bar here ul/li with grid -->
-    <section class="hero"> 
-      <picture class="item">
-        <!-- NOTE: this was to have an angled img on larger screen and change that for smaller screen  -->
-       <!--  <source media="(min-width: 1030px)" srcset="https://res.cloudinary.com/tech-stories/image/upload/bo_3px_solid_rgb:6d6767,c_scale,h_387,r_5/a_340/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png"> -->
-       <!--  <source media="(max-width: 1029px)" srcset="https://res.cloudinary.com/tech-stories/image/upload/c_fill,h_500/v1563406426/9781524713898_3_-1_rakndq.jpg"> -->
-        <!-- <img id="bookcover" src="https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:383636,c_scale,h_1356/v1563406426/9781524713898_3_-1_rakndq.jpg" --> 
-        <img src="https://res.cloudinary.com/tech-stories/image/upload/bo_4px_solid_rgb:6a6b6d,c_fill,h_500,r_2/v1563406426/9781524713898_3_-1_rakndq.jpg" alt="Code Like a Girl bookcover. Gray background with blue and rainbow swirly print" >
-      </picture>  
-      <article class="item" id="description">
-        <h1>Ever Wondered How Coding Gets Done? </h1>
-        
-        <h2>From the author of <span>The Daring Book for Girls</span> comes <span>Code Like a Girl: Rad Tech Projects + Practical Tips</span>.</h2>
-        <h2>For middle school girls -- and everyone else, of all ages and genders.</h2>
+  <body>
+    <main class="wrapper">
+      <!-- add nav bar here ul/li with grid?? -->
+      <!-- Figure out h1 issue  -->
+      <section class="hero"> 
+        <picture class="item" id="cover-image">
+          <!-- NOTE: this was to have an angled img on larger screen and change that for smaller screen  -->
+         <!--  <source media="(min-width: 1030px)" srcset="https://res.cloudinary.com/tech-stories/image/upload/bo_3px_solid_rgb:6d6767,c_scale,h_387,r_5/a_340/v1552341463/Screen_Shot_2019-02-14_at_5.20.54_PM_q3yvs3.png"> -->
+         <!--  <source media="(max-width: 1029px)" srcset="https://res.cloudinary.com/tech-stories/image/upload/c_fill,h_500/v1563406426/9781524713898_3_-1_rakndq.jpg"> -->
+          <!-- <img id="bookcover" src="https://res.cloudinary.com/tech-stories/image/upload/bo_2px_solid_rgb:383636,c_scale,h_1356/v1563406426/9781524713898_3_-1_rakndq.jpg" --> 
+          <img src="https://res.cloudinary.com/tech-stories/image/upload/bo_4px_solid_rgb:6a6b6d,c_fill,h_500,r_2/v1563406426/9781524713898_3_-1_rakndq.jpg" height="350" alt="Code Like a Girl bookcover. Gray background with blue and rainbow swirly print" >
+        </picture>  
+        <article class="item" id="description">
+          <h2>Ever Wonder How Coding Gets Done? </h2>
+          
+          <p>From the author of <span>The Daring Book for Girls</span> comes <span>Code Like a Girl: Rad Tech Projects + Practical Tips</span>.</p>
+
+          <p>For middle school girls -- and everyone else, of all ages and genders.</p>
 
 
-        <h1>Available in stores on Tuesday, August 13, 2019.</h1>
+          <h2>Available in stores on Tuesday, August 13, 2019.</h2>
 
-        <a class="uppercase" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Hey, I definitely want to pre-order this book </a>
-        <!-- right arrow: &rarr; -->
-      </article>
-    </section>
-    <section class="cards">
-      <ul>
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/c_scale,h_270,w_456/v1562860271/Screen_Shot_2019-07-11_at_11.50.55_AM_dsevbz.png" alt="Blue dog on orange background, says Hello World">
-            <figcaption><h3>Grab this book now!</h3></figcaption>
-          </figure>
-          <p>
-            Code like a Girl is unlike any other book out there. It's a brand new way into learning about tech and code. It's especially written for everyone who has ever thought you have to first be a math genius before writing a single line of code. Because: nah. Code is all about story and language. Pick up a copy at your local indie book store, or  <a class="no-link-background" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Amazon</a>, <a class="no-link-background" href="https://www.target.com/p/code-like-a-girl-rad-tech-projects-and-practical-tips-by-miriam-peskowitz-hardcover/-/A-77096390" target="blank">Target</a>, and wherever books are sold. 
-          </p>
-          <a class="uppercase" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Buy the book</a>
-        </li>
+          <a class="uppercase" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Hey, I definitely want to pre-order this book </a>
+          <!-- right arrow: &rarr; -->
+        </article>
+      </section>
+      <div class="wrapper">
+      <section class="cards">
+        <ul>
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/c_scale,h_270,w_456/v1562860271/Screen_Shot_2019-07-11_at_11.50.55_AM_dsevbz.png" alt="Blue dog on orange background, says Hello World">
+              <figcaption><h3>Grab this book now!</h3></figcaption>
+            </figure>
+            <p>
+              Code like a Girl is unlike any other book out there. It's a brand new way into learning about tech and code. It's especially written for everyone who has ever thought you have to first be a math genius before writing a single line of code. Because: nah. Code is all about story and language. Pick up a copy at your local indie book store, or  <a class="no-link-background" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Amazon</a>, <a class="no-link-background" href="https://www.target.com/p/code-like-a-girl-rad-tech-projects-and-practical-tips-by-miriam-peskowitz-hardcover/-/A-77096390" target="blank">Target</a>, and wherever books are sold. 
+            </p>
+            <a class="uppercase" href="https://www.amazon.com/Code-Like-Girl-Projects-Practical/dp/1524713899"  target="_blank">Buy the book</a>
+          </li>
 
-        <!-- Supplies -->
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807342/Screen_Shot_2019-07-10_at_9.08.40_PM_e3rjif.png" alt="page from Code Like a Girl that says Tinkering">
-            <figcaption>
-              <h3>Supplies</h3>
-            </figcaption>
-          </figure>
-          <p>
-            In addition to coding at Trinket.io and at scratch.mit.edu, the book guides readers in putting together their own computer from a Raspberry Pi core. That's when the fun begins: with motion sensors, light shows and more. You can just read along, but if you want to dive in, I've put some ideas together for where to get the stuff. Get ready to hop over to Code Like a Girl's Github page.
+          <!-- Supplies -->
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807342/Screen_Shot_2019-07-10_at_9.08.40_PM_e3rjif.png" alt="page from Code Like a Girl that says Tinkering">
+              <figcaption>
+                <h3>Supplies</h3>
+              </figcaption>
+            </figure>
+            <p>
+              In addition to coding at Trinket.io and at scratch.mit.edu, the book guides readers in putting together their own computer from a Raspberry Pi core. That's when the fun begins: with motion sensors, light shows and more. You can just read along, but if you want to dive in, I've put some ideas together for where to get the stuff. Get ready to hop over to Code Like a Girl's Github page.
+            </p>
+            <a class="uppercase" href="https://github.com/CodeLikeAGirlBook/Supplies">Supplies</a>
+          </li>
 
-          </p>
-          <a class="uppercase" href="https://github.com/CodeLikeAGirlBook/Supplies">Supplies</a>
-        </li>
+          <!-- Debugging/help -->
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562949057/Screen_Shot_2019-07-12_at_12.30.42_PM_fir9xx.png" alt="Debugging description and drawings of two bugs">
+              <figcaption>
+                <h3>Help</h3>
+              </figcaption>
+            </figure>
+            <p>
+              Coding is both easier and harder than its reputation has it. You're reading the book and coding, and you've run into a problem. No worries, we've got your back. Could be that something has changed. There's help at the book's github page, where you can see if anyone else has had a similar problem. Or tweet @MiriamPeskowitz. 
+            </p>
+            <a class="uppercase" href="https://github.com/CodeLikeAGirlBook/Issues" target="_blank">Help</a>
+          </li>
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562807641/miriam_avatar_qj1eje.jpg" alt="picture of Miriam Peskowitz">
+              <figcaption>
+                <h3>About the author</h3>
+              </figcaption>
+            </figure>
+            <p>
+              Miriam Peskowitz's last book was the New York Times and international bestseller <strong>The Daring Book for Girls</strong>. In 2015 she decided to write <strong>Code Like a Girl</strong>, and in 2016 she immersed herself in the tech community. Her vision: figure out creative and welcoming ways to teach people to code. Because code belongs to all of us. 
+            </p>
+            <a class="uppercase" href="https://mpeskowitz.com/about-1">More about Miriam</a>
+          </li>
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807659/Screen_Shot_2019-07-10_at_9.13.34_PM_m7gn4k.png" alt="many girls and boys">
+              <figcaption>
+                <h3>Supporters</h3>
+              </figcaption>
+            </figure>
+            <p>
+              No one codes alone. Here are some of the people and companies who support the movement for equality in coding and tech. They're pushing to give everyone a chance to build awesome things with code. I'm happy to include them here.
+            </p>
+            <p>
+              Thanks everyone! You're the best.  
+            </p>
+            <a class="uppercase" href="#">Coming soon:  Supporters</a>
+          </li>
+          <li>
+            <figure>
+              <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562860080/Screen_Shot_2019-07-11_at_11.47.46_AM_csww1a.png" alt="An example of code, with learning labels">
+              <figcaption><h3>Teachers & Parents</h3></figcaption>
+            </figure>
+            <p>
+              <strong>Code Like a Girl</strong> helps people of all ages, and helps teachers and parents learn the basics of coding, so they can support their kids. You'll be able to answer the kids' questions about code--and your own. Plus, when you've finished <strong>Code Like a Girl</strong>, where can you learn next? I've collected some resources on the Github page. 
+            </p>
+            <a class="uppercase" href="#">Coming Soon:   Resources</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    </main>
 
-        <!-- Debugging/help -->
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562949057/Screen_Shot_2019-07-12_at_12.30.42_PM_fir9xx.png" alt="Debugging description and drawings of two bugs">
-            <figcaption><h3>Help</h3></figcaption>
-          </figure>
-          <p>
-            Coding is both easier and harder than its reputation has it. You're reading the book and coding, and you've run into a problem. No worries, we've got your back. Click here for some extra help, or at least, to see if anyone else has had your problem. Or tweet @MiriamPeskowitz. 
-          </p>
-          <a class="uppercase" href="https://github.com/CodeLikeAGirlBook/Issues" target="_blank">Help</a>
-        </li>
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562807641/miriam_avatar_qj1eje.jpg" alt="picture of Miriam Peskowitz">
-            <figcaption><h3>About the author</h3></figcaption>
-          </figure>
-          <p>
-            Miriam Peskowitz's last book was the New York Times and internationally bestselling Daring Book for Girls. In 2016 she immersed herself in the tech community. Her vision: figure out creative and welcoming ways to teach people to code. Because code belongs to all of us. 
-
-          </p>
-          <a class="uppercase" href="https://mpeskowitz.com/about-1">More about Miriam</a>
-        </li>
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562807659/Screen_Shot_2019-07-10_at_9.13.34_PM_m7gn4k.png" alt="many girls and boys">
-            <figcaption><h3>Supporters</h3></figcaption>
-          </figure>
-          <p>
-            No one codes alone. Here are some of the people and companies who support the movement for equality in coding and tech. They're pushing to give everyone a chance to build awesome things with code. I'm happy to include them here. 
-
-            Thanks everyone! You're the best.  
-          </p>
-          <a class="uppercase" href="#">Coming soon:  Supporters</a>
-        </li>
-        <li>
-          <figure>
-            <img src="https://res.cloudinary.com/tech-stories/image/upload/v1562860080/Screen_Shot_2019-07-11_at_11.47.46_AM_csww1a.png" alt="An example of code, with learning labels">
-            <figcaption><h3>Teachers & Parents</h3></figcaption>
-          </figure>
-          <p>
-            Code Like a Girl aims to help teachers and parents learn the basics of coding, so they can support kids' learning. It's everything YOU always wanted to know about how to answer the kids' questions about code--and your own. Plus, where to go next once you've finished Code Like a Girl. 
-          </p>
-          <a class="uppercase" href="#">Coming Soon:   Resources</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2019. Made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam</a></p>
-  </footer>
-  <!-- What else should go in footer: github page , randomhouse children's books page ALSO -- make the footer same background or color as the header -->
-</body>
+    <footer>
+      <p><strong>Code Like a Girl: Rad Projects + Practical Tips</strong> is published by Knopf Books for Young Readers/Random House Childrens' Books, 2019. It is available wherever curious and awe-inspiring things are sold.<p>
+      <p>&copy; 2019. Website made with ♥ by <a href="https://twitter.com/MiriamPeskowitz" target="_blank">Miriam.</a></p>
+    </footer>
+    <!-- What else should go in footer: github page , randomhouse children's books page -->
+  </body>
 </html>
