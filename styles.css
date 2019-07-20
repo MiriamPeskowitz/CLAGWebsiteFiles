@@ -136,7 +136,11 @@ a:hover {
   color: white;
   padding: .75rem;
   font-size: 1.75rem;
+
 /*change: take away space on bototm, so it sits slightly lower */
+}
+.cards > ul > li > figure > figcaption > h3 > .too-light {
+  color: black;
 }
 
 /*/change font size */
@@ -150,11 +154,16 @@ a:hover {
 .cards > ul > li > a {
   padding: 1rem 2rem; 
   margin: 2rem;
+  font-size: 1.5rem;
 }
 
 .no-link-background {
   color: black;
   background-color: white;
+}
+
+.too-light {
+  color: black;
 }
 
 /* FOOTER */
@@ -179,8 +188,8 @@ footer {
 }
 
 
-footer > p {
-  font-size: 1.5rem;
+footer > section > p {
+  font-size: 1.1rem;
 }
 
 footer > section > p > a {
@@ -198,7 +207,6 @@ footer > section > p > a:hover {
 @media screen and (max-width: 830px) {
   .hero {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
   }
   .hero > article {
@@ -248,6 +256,7 @@ footer > section > p > a:hover {
 @media screen and (max-width: 415px) {
   .hero {
     margin: none;
+    /*none is not a value for margin */
   }
 
   .hero > img {
@@ -291,4 +300,4 @@ footer > section > p > a:hover {
   }*/
  
 }
-/*for mobile, make the overlay to each card smaller, and maybe make the text color darker 
+/*for mobile, make the overlay to each card smaller, and maybe make the text color darker */
