@@ -203,7 +203,7 @@ footer > section > p > a:hover {
   font-weight: bolder;
 }
 
-/*MEDIA QUERIES */
+/*MEDIA QUERIES -- clean these up, test what's necessary and what's not */
 @media screen and (max-width: 830px) {
   .hero {
     grid-template-columns: 100%;
