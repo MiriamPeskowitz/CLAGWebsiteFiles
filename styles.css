@@ -8,7 +8,6 @@ a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Generic styles */
 html {
   scroll-behavior: smooth;
 }
@@ -31,14 +30,13 @@ a:hover {
 .hero {
   background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
   background-size: cover;
-  /*background-color: skyblue;*/
   padding: 1rem;
-  border: 2px solid gray;
+  border: 4px solid gray;
   border-radius: .45rem;
   margin: 1rem;
   /* grid styles */
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 1rem;
   align-items: center;
   justify-items: center;
@@ -60,21 +58,9 @@ a:hover {
 
 .hero > article > p {
   margin-left: 2rem;
+  font-size: 1.5rem;
 }
-/*
-.hero > p {
-  /*font-size: 36px;*/
-/*  padding-bottom: 1rem;
-  font-weight: bold;*/
-/*}*/
 
-/*.hero > article > h1 {
-  font-size: 2rem;
-}*/
-
-/*.hero > article > h2 {
-  padding-left: 2rem;
-}*/
 .hero > article > h2 > span {
   font-weight: 900;
   font-style: italic;
@@ -134,7 +120,8 @@ a:hover {
 /*change color, accessibility esp in teachers & parents */
 .cards > ul > li > figure > figcaption > h3 {
   color: white;
-  padding: .75rem;
+  /*padding: .75rem;*/
+  /*  margin-bottom: 1rem;*/
   font-size: 1.75rem;
 
 /*change: take away space on bototm, so it sits slightly lower */
@@ -143,7 +130,6 @@ a:hover {
   color: black;
 }
 
-/*/change font size */
 .cards > ul > li > p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -171,17 +157,14 @@ footer {
   background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
   background-size: cover;
   color:  black;
- /* padding: .75rem;*/
   text-align: left;
-/*  font-size: 1rem;*/
-  /*width: 100%;*/
   padding: 1rem;
   border: 2px solid gray;
   border-radius: .45rem;
   margin: 1rem;
   /*#grid*/
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
   align-items: center;
   justify-items: center;
@@ -189,7 +172,7 @@ footer {
 
 
 footer > section > p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 footer > section > p > a {
@@ -203,101 +186,24 @@ footer > section > p > a:hover {
   font-weight: bolder;
 }
 
-/*MEDIA QUERIES -- clean these up, test what's necessary and what's not */
-@media screen and (max-width: 830px) {
+/*MEDIA QUERIES*/
+@media screen and (max-width: 760px) {
+
   .hero {
-    grid-template-columns: 100%;
     align-items: center;
-  }
-  .hero > article {
-    padding: 0 5rem;
-  }
-
-  .hero > article > a {
-    padding: 1rem;
-    margin: .75rem 0;
-    font-size: 1.5rem;
-  }
-}
-/*  with new auto setting, 830px is when it should get smaller, and go to */
-@media screen and (max-width: 545px) { 
-  .item {
-    text-align: center;
-  }
-  .cards {
-    padding: 0;
-  }
-  .cards > ul > li > figure > figcaption > h3 {
-    color: white;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-  }
-  .cards > ul > li > p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    /*padding: 1rem;*/
-    color: black
-  }
-  .hero {
-  /*  background: none;*/
-    border-radius: .45rem;
-  }
-
-  .hero > article {
-    padding: 0;
-  }
-  .hero > article > h2 {
-    /*padding-left: .5rem;*/
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .hero {
-    margin: none;
-    /*none is not a value for margin */
-  }
-
-  .hero > img {
-    align-items: center;
-    margin-bottom: .5rem;
-    width: 100px;
-  }
-
-  .hero > article > a {
-    padding: 1rem;
-    margin-top: .75rem;
-    margin-left: .25rem;
-    font-size: 1.5rem;
-  }
-
-
-}
-
-@media screen and (max-width: 380px) {
-  .hero {
     margin: 0;
-  }
-  #description {
     padding: 0;
   }
+
   .cards {
-    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  p {
-      padding: 1rem 0;
+
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
   }
-  ul {
-    padding: 1rem 0;
-  
-  align-items: center;
-  justify-items: center;
 }
- /* .hero > #bookcover > img{
-    margin-left: 10%;
-    height: 30%;
-  }*/
- 
-}
-/*for mobile, make the overlay to each card smaller, and maybe make the text color darker */
