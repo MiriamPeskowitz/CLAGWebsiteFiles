@@ -36,8 +36,8 @@ a:hover {
   margin: 1rem;
   /* grid styles */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /*grid-gap: 1rem;*/
   align-items: center;
   justify-items: center;
 }
@@ -52,7 +52,7 @@ a:hover {
 }
 
 #description  {
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   font-size: 1.4rem;
 }
 
