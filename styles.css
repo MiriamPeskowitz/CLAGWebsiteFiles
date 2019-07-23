@@ -90,10 +90,11 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   list-style: none;
+  text-align: center;
 }
 
 .cards > ul > li {
-  border: 1px solid #E2E2E2;
+  border: 4px solid #aba7a7;
   border-radius: .5rem;
 }
 
@@ -115,6 +116,7 @@ a:hover {
   background-color: rgba(0,0,0,.2);
   width: 100%;
   height: 40%;
+  display: none;
 }
 
 /*change color, accessibility esp in teachers & parents */
@@ -123,6 +125,7 @@ a:hover {
   /*padding: .75rem;*/
   /*  margin-bottom: 1rem;*/
   font-size: 1.75rem;
+  display: none;
 
 /*change: take away space on bototm, so it sits slightly lower */
 }
@@ -141,6 +144,7 @@ a:hover {
   padding: 1rem 2rem; 
   margin: 2rem;
   font-size: 1.5rem;
+  
 }
 
 .no-link-background {
@@ -168,6 +172,7 @@ footer {
   grid-gap: 1.5rem;
   align-items: center;
   justify-items: center;
+  text-align: center;
 }
 
 
