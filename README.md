@@ -5,4 +5,7 @@ To preview site: https://miriampeskowitz.github.io/CLAGWebsiteFiles/
 
 The book's github repo is https://github.com/codelikeagirlbook.
 
+Permanent site:http://codelikeagirlbook.com/
+
+
 
