@@ -31,7 +31,7 @@ a:hover {
   background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
   background-size: cover;
   padding: 1rem;
-  border: 4px solid gray;
+  border: 4px solid #2898C6  ;
   border-radius: .45rem;
   margin: 1rem;
   /* grid styles */
@@ -94,16 +94,19 @@ a:hover {
 }
 
 .cards > ul > li {
-  border: 4px solid #aba7a7;
+  border: 4px solid #2898C6  ;
+  /*#aba7a7;*/
   border-radius: .5rem;
 }
 
+/*change here */
 .cards > ul > li > figure {
   max-height: 220px;
   overflow: hidden;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
   position: relative;
+  margin-bottom: .5rem;
 }
 
 .cards > ul > li > figure > img {
@@ -140,10 +143,12 @@ a:hover {
   color: #666666;
 }
 
+/*changed margin fro 1rem to 0 for the top, added background color to change from goldenrod*/
 .cards > ul > li > a {
   padding: 1rem 2rem; 
-  margin: 2rem;
+  margin: 0 2rem;
   font-size: 1.5rem;
+  background-color: skyblue;
   
 }
 
@@ -163,7 +168,7 @@ footer {
   color:  black;
   text-align: left;
   padding: 1rem;
-  border: 2px solid gray;
+  border: 4px solid #2898C6;
   border-radius: .45rem;
   margin: 1rem;
   /*#grid*/
