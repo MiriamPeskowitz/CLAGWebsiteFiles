@@ -23,20 +23,46 @@ a {
   transition: all .3s;
 }
 
+
 a:hover {
   opacity: .6;
 }
 
+nav {
+  padding: 1rem 0;
+/*  background-color: lightblue;*/
+  border-radius: .25rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 1rem;
+}
+
+nav > ul > li > a {
+  background-color: white;
+  color: black;
+  padding: .5rem;
+}
+
 .hero {
-  background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
-  background-size: cover;
+ /* background: url('https://res.cloudinary.com/tech-stories/image/upload/v1562809014/Screen_Shot_2019-07-10_at_9.36.17_PM_mvnxgg.png') center;
+  background-size: cover;*/
+  background-color: lightblue;
   padding: 1rem;
   border: 4px solid #2898C6  ;
   border-radius: .45rem;
   margin: 1rem;
   /* grid styles */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   /*grid-gap: 1rem;*/
   align-items: center;
   justify-items: center;
@@ -87,7 +113,7 @@ a:hover {
 .cards > ul {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
   list-style: none;
   text-align: center;
@@ -170,7 +196,7 @@ footer {
   padding: 1rem;
   border: 4px solid #2898C6;
   border-radius: .45rem;
-  margin: 1rem;
+/*  margin: 1rem 0;*/
   /*#grid*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -197,14 +223,13 @@ footer > section > p > a:hover {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 880px) {
     body {
       display: grid;
       grid-template-columns: 100%;
       align-items: center;
       grid-template-rows: 400px auto;
     }
-   
 
   .hero {
     align-items: center;
@@ -217,10 +242,17 @@ footer > section > p > a:hover {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    overflow: scroll;
   }
 
   footer {
     display: grid;
     grid-template-columns: 100%;
+    background: none;
+    background-color: lightblue;
+  }
+
+  footer > .book-image {
+    display: none;
   }
 }
